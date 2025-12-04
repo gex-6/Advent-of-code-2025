@@ -19,18 +19,17 @@ function findAcessRolls(input) {
     const cols = paperRolls[0].length;
     let amountOfAcessRolls = 0;
  
-    // Iterate over all cells
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             const currentCell = paperRolls[i][j];
             const neighbors = [];
             
-            // Check all 8 neighbors
+            // neighbours
             for (const [di, dj] of directions) {
                 const ni = i + di;
                 const nj = j + dj;
                 
-                // Check if neighbor is within bounds
+                // bounds check
                 if (ni >= 0 && ni < rows && nj >= 0 && nj < cols) {
                     neighbors.push({
                         value: paperRolls[ni][nj],
@@ -77,7 +76,7 @@ function findAcessRollsRecursively(paperRolls, amountOfAcessRolls, amountOfAcess
             const currentCell = paperRolls[i][j];
             const neighbors = [];
             
-            // 8 neighbours
+            // neighbours
             for (const [di, dj] of directions) {
                 const ni = i + di;
                 const nj = j + dj;
