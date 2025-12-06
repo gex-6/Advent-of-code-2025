@@ -1,4 +1,4 @@
-// https://adventofcode.com/2025/day/5#part2
+// https://adventofcode.com/2025/day/5
 
 // lvl 1
 
