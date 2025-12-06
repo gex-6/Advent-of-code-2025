@@ -17,7 +17,6 @@ function findJoltages(input) {
                 }
             }
         }
-        // console.log(maxNum);
         totalJoltages += maxNum;
     }
     console.log("totalJoltages: ", totalJoltages);
